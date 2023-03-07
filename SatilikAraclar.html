@@ -1,0 +1,766 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">     
+     <title>Dinçer Oto Galeri</title>    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">  
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      <style>
+          body{
+              font-family:cursive;
+               background-color: rgba(83, 92, 104,1.0);
+          }                      
+          #collapsenav{
+              font-family:monospace;
+              font-size: 20px;
+          }
+          #collapsenav a:hover{
+              border-radius: 5px;
+               background-color: rgba(83, 92, 104,1.0);
+              color:rgba(223, 249, 251,1.0);
+              font-weight: bold; }        
+           #dropdownmenu a:hover{
+              background-color:floralwhite;
+              border-radius: 7px;
+          }     
+          #dropdownmenu{
+              background-color: rgba(127, 143, 166,1.0);
+          } 
+          .kpk{
+              margin: 15%;
+              color:darkgray;
+              opacity: 0.3;
+              font-weight: bold;             
+          }
+          .kpk:hover{
+              opacity: 0.8;
+              color:white;              
+          }
+          
+          nav{
+              background-color:rgba(149, 175, 192,1.0);
+          }
+          
+           #giris{
+              background-color: rgba(1, 163, 164,1.0);
+             font-weight: bold;
+              height:65px;
+             
+          }
+          
+          #giris a:hover{
+              color: rgba(223, 249, 251,1.0);
+          }
+          
+        #table{
+              background-color: beige;
+          }
+          
+          table thead tr{
+              background-color:burlywood;
+              height: 70px;
+          }
+          
+          p{
+              text-align: center;
+          }
+          
+          h3{
+              margin-bottom: 20px;
+              text-align: center;
+          }
+          h4{
+              font-weight:bold;
+          }
+          h5{
+              margin-top: 72px;
+          }
+          table tbody tr td button{
+              margin-top: 70px;
+          }
+          
+         
+          table thead tr th{
+              font-size: 15px;
+          }
+          
+          
+          table tbody tr:hover{
+              background-color:azure;
+          }  
+        
+          #satiliknav{
+              margin-top: 30px;
+              margin-bottom: 30px;
+          }
+          
+
+          @media screen and (min-width:100px) {
+
+    .card-title,
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+    
+          
+      </style>
+    </head>
+    
+    
+  <body>
+     
+      <div class="text-white fixed-top"  id="giris">
+  <a class="navbar-brand">
+       <i class="fas fa-car fa-2x"></i> &nbsp; DİNÇER OTO GALERİ </a></div>
+   
+ 
+              
+       <div id="deneme3" class="carousel slide" data ride="carousel">
+    
+        <ul class="carousel-indicators">
+            <li data-target="#deneme3" data-slide-to="0" class="active"></li>  
+       </ul>
+           <div class="carousel-inner">
+        
+            <div class="carousel-item active">
+                
+                <img class="rounded" src="images/satilik1.jpg" width="100%" height="70%">
+                <div class="carousel-caption">
+                    <h2 class="kpk">SATILIK ARAÇLAR</h2>
+                </div>
+             </div>
+
+         </div></div>
+      
+    
+         <nav class="navbar navbar-expand-md navbar-dark"  id="satiliknav">
+      
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+    <div class="collapse navbar-collapse justify-content-center" id="collapsenav">
+           
+        <ul class="navbar-nav">
+            
+        <li class="nav-item"> <a class="nav-link" href="OtoGaleri.html">Anasayfa</a></li>
+                <li class="nav-item dropdown navbar-dark active"> <a class="nav-link dropdown-toggle" href="#" id="dropmenu" data-toggle="dropdown" >Araçlar</a>
+            <div class="dropdown-menu "  id="dropdownmenu">
+            <a class="dropdown-item" href="SatilikAraclar.html" style="color:rgba(34, 47, 62,0.8)">Satılık Araçlar</a>
+            <a class="dropdown-item" href="KiralikAraclar.html" style="color:rgba(34, 47, 62,0.8)">Kiralık Araçlar</a>
+            </div>
+            </li> 
+        <li class="nav-item"> <a class="nav-link" href="Hakkimizda.html">Hakkımızda</a></li>
+        <li class="nav-item"> <a class="nav-link" href="iletisim.html">İletişim</a></li>
+
+        </ul>
+        </div>
+            
+</nav>
+      
+      
+     <div class="container-fluid">
+         <div class="table-responsive">
+      
+<table class="table " id="table">
+    <thead>
+         <tr>
+             <th style="width: 20%">
+                   
+             </th>
+             <th style="width: 12%">
+             <h4> Marka   </h4>
+             </th>
+             <th style="width: 12%">
+             <h4> Seri   </h4>
+             </th>
+             <th style="width: 12%">
+             <h4> Model </h4>
+             </th>
+             <th style="width: 6%">
+              <h4>Yıl </h4>
+             </th>
+             <th style="width: 10%">
+              <h4>Km  </h4>
+             </th>
+             <th style="width: 10%">
+              <h4>Renk</h4>      
+             </th>
+             <th style="width: 12%">
+              <h4>Fiyat</h4>      
+             </th>
+             <th style="width: 10%">
+              <h4>Detay</h4>      
+             </th>
+             
+        </tr>
+ 
+    </thead>
+    
+    <tbody>
+         <tr>
+            <td>
+                <a href="images/satilik10.jpg " target="_blank">
+                    
+                <img class="rounded" src="images/satilik10.jpg" width="250px" height="200px"> </a></td>
+            <td><h5>  Ferrari </h5></td>
+            <td><h5>F8</h5></td>
+            <td><h5>  Tributo    </h5></td>
+            <td><h5>2020</h5></td>
+            <td><h5>0</h5></td>
+            <td><h5>Kırmızı</h5></td>
+            <td><h5>5.800.000₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik9">İncele</button>
+                                      <div class="modal fade" id="satilik9">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title"> Ferrari F8 Tributo </h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/ferrari.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/ferrarion.jpg" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/ferrariarka.jpg" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/ferrari1.jpg" width="100%" height="270px"> 
+                                         <br>
+               <br> 
+                    <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>                    
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>FERRARI F8 TRIBUTO
+V8T 3.9CC 725 PS RWD  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>OTOMATİK VİTES </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>BENZİN</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>SPOR EGZOZ</p>
+                 <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>FRONT LIFTING</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>IC CARBON PAKET </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>CEVRE GORUS KAMERA </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>ELEKTRIKLI ON KOLTUKLAR </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>DAYTONA CARBON KOLTUKLAR </p>
+               
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+        
+         <tr>
+            <td> 
+                <a href="images/bentley.png" target="_blank">
+                <img class="rounded" src="images/bentley.png" width="250px" height="200px"> </a></td>
+            <td><h5>  Bentley  </h5></td>
+            <td><h5>Continental </h5></td>
+            <td><h5> GT   </h5></td>
+            <td><h5>2020</h5></td>
+            <td><h5>0</h5></td>
+            <td><h5>Mavi</h5></td>
+            <td><h5>1.300.000₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik8">İncele</button>
+                                      <div class="modal fade" id="satilik8">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Bentley Continental GT</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/bentleyon.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik9.jpg" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/satilik9_1.jpg" width="100%" height="270px"> 
+                                         <br>
+               <br> 
+                    <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>                    
+            
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>2020 MY BENTLEY CONTINENTAL GT </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>V8 4.0 T.TURBO 545 PS  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>OTOMATİK VİTES </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>BENZİN</p>
+                
+                 <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i> ARACIMIZ FABRİKADAN ÇIKMIŞ OLUP YÜKLEMEYE HAZIR 10 GÜNDE TESLİM</p>
+               
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+        
+        
+        
+        <tr>
+            <td> 
+                <a href="images/kiralik.png" target="_blank">
+                <img class="rounded" src="images/kiralik.png" width="250px" height="200px"> </a></td>
+            <td><h5>Renault</h5></td>
+            <td><h5>Fluence</h5></td>
+            <td><h5>1.5 dCi Touch </h5></td>
+            <td><h5>2015</h5></td>
+            <td><h5>78.000</h5></td>
+            <td><h5>Beyaz</h5></td>
+            <td><h5>98.000₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik">İncele</button>
+                                      <div class="modal fade" id="satilik">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Renault Fluence</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/satilik1_2.jpg" width="100%" height="280px">
+                                        <img class="mt-3 rounded" src="images/satilik1_1.jpg" width="100%" height="280px"> <br>
+               <br> 
+                      <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>   
+            <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>RENAULT FLUENCE 1.5 DCI TOUCH EDC 110 HP </p>
+            <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>MANUEL VİTES </p>
+            <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>DİZEL  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>SOL ÖN KAPI VE SOL ARKA ÇAMURLUK BOYALI SOL ARKA KAPI DEĞİŞEN BULUNMAKTADIR. </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>TRAMER KAYDI BUNLARA BAĞLI OLARAK 2 PARÇA HALİNDE TOPLAM 3.846 TL ÇIKMAKTADIR.</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>BUNLARIN HARİCİNDE DEĞİŞEN VEYA BOYA YOKTUR.  </p>
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+        
+        <tr>
+            <td> 
+                <a href="images/satilik2_1.jpg" target="_blank">
+                <img class="rounded" src="images/satilik2_1.jpg" width="250px" height="200px"> </a></td>
+            <td><h5>Fiat</h5></td>
+            <td><h5>Egea</h5></td>
+            <td><h5> 1.6 Multijet Urban </h5></td>
+            <td><h5>2017</h5></td>
+            <td><h5>30.000</h5></td>
+            <td><h5>Füme</h5></td>
+            <td><h5>125.000₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik1">İncele</button>
+                                      <div class="modal fade" id="satilik1">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Fiat Egea </h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/satilik2_1.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik2_2.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik2_3.jpg" width="100%" height="270px"> <br>
+               <br> 
+                    <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>                    
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>2017 EGEA 1.6 MULTIJET URBAN 120HP  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>MANUEL VİTES  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>BENZİN </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>HATASIZ, KAZASIZ VE BOYASIZ </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>TRAMER/HASAR KAYDI YOKTUR.</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>YEDEK ANAHTARI VE KİTAPÇIKLARI MEVCUTTUR.  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>EKSPER RAPORU MEVCUT OLUP İLGİLENENLERİN İLETİŞİME GEÇMESİ GEREKMEKTEDİR.</p>
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+        
+        <tr>
+            <td> 
+                <a href="images/satilik3.jpg" target="_blank">
+                <img class="rounded" src="images/satilik3.jpg" width="250px" height="200px"> </a></td>
+            <td><h5>BMW</h5></td>
+            <td><h5>5 Serisi</h5></td>
+            <td><h5>  520i Executive Luxury Line  </h5></td>
+            <td><h5>2018</h5></td>
+            <td><h5>27.620</h5></td>
+            <td><h5>Füme</h5></td>
+            <td><h5>489.000₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik2">İncele</button>
+                                      <div class="modal fade" id="satilik2">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">BMW  520i </h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/satilik3_2.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik3_1.jpg" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/satilik3_2.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik3_3.jpg" width="100%" height="270px"> <br>
+               <br> 
+                    <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>                    
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>SINIFININ EN DOLUSU   </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>ÖZEL SİPARİŞ</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>OTOMATİK VİTES</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>BENZİN</p>
+                 <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>HATASIZ-BOYASIZ-TRAMERSİZ</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>ARACIMIZ GIRTLAK DOLU OLUP LUXURY LİNE EXECUTİVE PAKETTİR </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>YEDEK ANAHTARI VE KİTAPÇIKLARI MEVCUTTUR.  </p>
+               
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td> 
+                <a href="images/satilik4.jpg" target="_blank">
+                <img class="rounded" src="images/satilik4.jpg" width="250px" height="200px"> </a></td>
+            <td><h5> Volkswagen </h5></td>
+            <td><h5>Golf</h5></td>
+            <td><h5>  1.4 TSI Highline   </h5></td>
+            <td><h5>2017</h5></td>
+            <td><h5>59.000</h5></td>
+            <td><h5>Gri</h5></td>
+            <td><h5>200.000₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik3">İncele</button>
+                                      <div class="modal fade" id="satilik3">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Volkswagen Golf </h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/satilik4_1.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik4_2.jpg" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/satilik4_3.jpg" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/satilik4_4.jpg" width="100%" height="270px"> <br>
+               <br> 
+                    <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>                    
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>SINIFININ EN DOLUSU   </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>YARI OTOMATİK VİTES </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>BENZİN </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>SOL ÖN ÇAMURLUK BOYA</p>
+                 <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i> DEĞİŞEN YOK</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>HASAR KAYDI 5.000₺ </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>YEDEK ANAHTARI VE KİTAPÇIKLARI MEVCUTTUR.  </p>
+               
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+        <tr>
+            <td> 
+                <a href="images/satilik5.jpg" target="_blank">
+                <img class="rounded" src="images/satilik5.jpg" width="250px" height="200px"> </a></td>
+            <td><h5>  Mercedes-Benz </h5></td>
+            <td><h5>C Serisi</h5></td>
+            <td><h5>  C200 AMG   </h5></td>
+            <td><h5>2017</h5></td>
+            <td><h5>1.750</h5></td>
+            <td><h5>Gri</h5></td>
+            <td><h5>449.000₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik4">İncele</button>
+                                      <div class="modal fade" id="satilik4">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Mercedes-Benz C200 AMG</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/satilik5_1.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik5_2.png" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/satilik5_3.jpg" width="100%" height="270px"> 
+                                         <br>
+               <br> 
+                    <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>                    
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>14/01/2020 BAYİ ÇIKIŞLIDIR  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>OTOMATİK VİTES </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>BENZİN</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>GARANTİSİ 2025 YILINA KADAR</p>
+                 <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i> ARACIN ÜZERİNDE 40.000₺ EXRA VARDIR</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>SIFIR ANAHTAR TESLİM STANDART AMG PAKET FİYATI : 480.000₺ 
+ </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>YEDEK ANAHTARI VE KİTAPÇIKLARI MEVCUTTUR.  </p>
+               
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+        
+         <tr>
+            <td> 
+                <a href="images/satilik6_2.jpg" target="_blank">
+                <img class="rounded" src="images/satilik6_2.jpg" width="250px" height="200px"> </a></td>
+            <td><h5>   Volkswagen </h5></td>
+            <td><h5>Scirocco </h5></td>
+            <td><h5>   1.4 TSI Sportline    </h5></td>
+            <td><h5>2015</h5></td>
+            <td><h5>68.000</h5></td>
+            <td><h5>Beyaz</h5></td>
+            <td><h5>162.000₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik5">İncele</button>
+                                      <div class="modal fade" id="satilik5">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title"> Volkswagen Scirocco </h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/satilik6_1.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik6_2.jpg" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/satilik6_34.jpg" width="100%" height="270px"> 
+                                         <br>
+               <br> 
+                    <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>                    
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>2015 VW SCİROCCO 1.4TSİ 160HP DSG SPORTLİNE  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>OTOMATİK VİTES </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>BENZİN</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>ECUFAST YAZILIM</p>
+                 <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i> CAM FİLMİ</p>
+                 <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i> DEĞİŞEN YOK</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>MAYIS 2021' E KADAR MUAYENE MEVCUT </p>
+               
+               
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+        
+         <tr>
+            <td> 
+                <a href="images/satilik7.jpg" target="_blank">
+                <img class="rounded" src="images/satilik7.jpg" width="250px" height="200px"> </a></td>
+            <td><h5>  Audi </h5></td>
+            <td><h5>A6</h5></td>
+            <td><h5>  A6 Sedan 2.0 TDI    </h5></td>
+            <td><h5>2012</h5></td>
+            <td><h5>129.000</h5></td>
+            <td><h5>Gri</h5></td>
+            <td><h5>279.000₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik6">İncele</button>
+                                      <div class="modal fade" id="satilik6">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Audi A6 Sedan</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/satilik7_1.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik7_2.png" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/satilik7_3.png" width="100%" height="270px"> 
+                                         <br>
+               <br> 
+                    <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>                    
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>HATASIZ-BOYASIZ TRAMERSİZ  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>OTOMATİK VİTES </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>DİZEL</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>LASTİKLER SIFIR AYARINDA</p>
+                 <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>VAKUMLU KAPILAR</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>CAM FİLMİ </p>
+     
+               
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+        
+         <tr>
+            <td> 
+                <a href="images/satilik8.jpg" target="_blank">
+                <img class="rounded" src="images/satilik8.jpg" width="250px" height="200px"> </a></td>
+            <td><h5> Volkswagen </h5></td>
+            <td><h5>CC  </h5></td>
+            <td><h5> 1.4 TSI Exclusive  </h5></td>
+            <td><h5>2013</h5></td>
+            <td><h5>147.750</h5></td>
+            <td><h5>Siyah</h5></td>
+            <td><h5>159.900₺</h5></td>
+            <td> 
+               
+                            <button type="button" class="btn btn-lg btn-warning" data-toggle="modal" data-target="#satilik7">İncele</button>
+                                      <div class="modal fade" id="satilik7">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Volkswagen CC</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark" >
+                                        <img class="rounded" src="images/satilik8_1.jpg" width="100%" height="270px">
+                                        <img class="mt-3 rounded" src="images/satilik8_2.jpg" width="100%" height="270px"> 
+                                        <img class="mt-3 rounded" src="images/satilik8_3.jpg" width="100%" height="270px"> 
+                                         <br>
+               <br> 
+                    <h3 style="color: azure">ARAÇ BİLGİLERİ</h3>                    
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>EXCULİVE EN DOLUSU  </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>OTOMATİK VİTES </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>BENZİN</p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>HATA BOYA KESİNLİKLE YOKTUR </p>
+                 <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i> 147.000 KM'DE BÜTÜN BAKIMLARI ZAMANINDA YAPILDI </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>EK OLARAK ÖN CAM OLMAK ÜZERE KOPLE FİLİM HAVUZ PASPASLAR SERAMİK PASTA CİLA BOYA KORUMA YAPILMIŞTIR </p>
+                <p class="mt-2" style="color: azure"><i class="fas fa-arrow-right">&ensp;</i>YEDEK ANAHTARI VE KİTAPÇIKLARI MEVCUTTUR.  </p>
+               
+                
+
+                                    </div>
+                                    <div class="modal-footer bg-dark">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+            </td>
+        </tr>
+        
+    </tbody>
+    
+      </table>   
+</div>
+         
+         
+         
+</div>   
+      
+      <ul class="pagination justify-content-center pagination-dark mb-5 mt-4" id="pagination">
+         <li class="page-item disabled"> <a class="page-link" href="#">Önceki</a></li>
+          <li class="page-item active"> <a class="page-link" href="#">1</a></li>
+          <li class="page-item"> <a class="page-link" href="SatilikAraclar_2.html">2</a></li>
+          <li class="page-item"> <a class="page-link" href="SatilikAraclar_2.html">Sonraki</a></li>
+      </ul>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+         
+         
+      
+          
+   
+      
+   <footer class="bg-light py-5" style="text-align: center" >
+      <div class="container">
+         <div class="row">
+       <div class="col-md-3"></div>
+       <div class="col-md-6" id="footer">
+            <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-f fa-2x mx-4"></i></a>
+            <a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter fa-2x mx-4" ></i></a>
+            <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram fa-2x mx-4" style="color: deeppink"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube fa-2x mx-4" style="color:crimson"></i></a>
+             </div>
+    <div class="col-md-12 mt-3" id="footers">
+             Copyright (c) 2020 Web Sitesi     
+             </div>
+             
+       </div>
+       </div>
+      
+      </footer>
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  </body>
+      
+</html>

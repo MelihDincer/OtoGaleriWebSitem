@@ -1,0 +1,848 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+     <title>Dinçer Oto Galeri</title>
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      
+      <style>
+          body{
+              font-family:cursive;
+               background-color: rgba(83, 92, 104,1.0);
+          }
+      
+          #alert{
+              margin-bottom: 0;
+              font-family:cursive;
+              
+          }
+          
+          #collapse1 .card{
+              background-color:rgba(220, 221, 225,1.0);
+          }
+          #collapse2 .card{
+              background-color:rgba(220, 221, 225,1.0);
+          }
+          #collapse3 .card{
+              background-color:rgba(220, 221, 225,1.0);
+          }
+          #collapse4 .card{
+              background-color:rgba(220, 221, 225,1.0);
+          }
+          
+          #collapsenav{
+              font-family:monospace;
+              font-size: 20px;
+          }
+          #collapsenav a:hover{
+              border-radius: 5px;
+              background-color: rgba(126, 214, 223,1.0);
+              color:rgba(0, 98, 102,1.0);
+              font-weight: bold;
+          }
+          
+          #dropdownmenu a{
+              color: aliceblue;
+     }
+              
+              
+              
+          #dropdownmenu{
+              color: aliceblue;
+              background-color: rgba(7, 153, 146,1.0);
+          }
+          
+          
+          
+          
+          #dropdownmenu a:hover{
+              background-color:floralwhite;
+              border-radius: 22px;
+          }
+          
+          nav{
+              background-color:rgba(1, 163, 164,1.0);
+          }
+          
+          
+          .kpk{
+              margin: 23%;
+              color:azure;
+              opacity: 0.5;
+          }
+          .kpk:hover{
+              opacity: 0.8;
+              color:white;
+          }
+          #yeni{
+              color: black;
+              opacity: 0.4;
+              
+          }
+          #yeni:hover{
+              opacity: 1;
+              color: aliceblue;
+          }
+          .bolum1{
+              margin-top: 22px;
+              text-align: center;
+              color:cadetblue;
+              
+          }
+          .bolum1:hover{
+              color:crimson;
+          }
+          
+          #accordion{
+           color: darkcyan;
+          }
+          
+          #col1{
+              margin-top: 10%;
+          }
+          
+          #col1 .card{
+              background-color:rgba(200, 214, 229,0.8);
+              color: rgba(44, 62, 80,0.9);
+          }
+          #col2{
+              margin-top: 10%;
+          }
+          #col2 .card{
+              background-color:rgba(200, 214, 229,0.8);
+              color: rgba(44, 62, 80,0.9);
+          }
+          
+          .card img{
+              border-radius: 3px;
+          }
+          .modal-header{
+              color: white;
+              background-color: darkcyan;
+          }
+          .modal-body{
+              background-color:lightslategray;
+              color: rgba(255, 255, 255,1.0);
+        }
+          
+          .modal-footer{
+              background-color:rgba(131, 149, 167,1.0);
+          }
+          
+          .card{
+              background-color:rgba(245, 246, 250,1.0);
+              color:  rgba(60, 99, 130,1.0);
+          }
+          
+         
+          
+          @media screen and (min-width: 768px){
+              .card img{
+                  width: 100%;
+                  height: 180px;
+                   }
+              .modal-body img{
+                  height: 270px;
+                  
+              }
+          }
+          
+          @media screen and (min-width:100px) {
+
+    .card-title,
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+          
+          
+         
+         
+      </style>
+    </head>
+    
+    
+  <body>
+     
+      <div class="alert alert-success alert-dismissible fade show" id="alert">
+ <button type="button" class="close" data-dismiss="alert">&times;</button>
+ <strong>Merhaba!</strong> Sitemize Hoşgeldiniz. Yeni gelen araçlarımız hakkında önceden bilgi almak için Sosyal Medya'dan bizi takip etmeyi unutmayınız.
+</div> 
+  
+    <nav class="navbar navbar-expand-md navbar-dark   navbar sticky-top">
+      <a class="navbar-brand">
+       <i class="fas fa-car fa-2x"></i> &nbsp; DİNÇER OTO GALERİ </a>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+    <div class="collapse navbar-collapse justify-content-center" id="collapsenav">
+           
+        <ul class="navbar-nav">
+            
+        <li class="nav-item active"> <a class="nav-link" href="OtoGaleri.html">Anasayfa</a></li>
+        <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="dropmenu" data-toggle="dropdown" >Araçlar</a>
+            <div class="dropdown-menu"  id="dropdownmenu">
+            <a class="dropdown-item" href="SatilikAraclar.html" >Satılık Araçlar</a>
+            <a class="dropdown-item" href="KiralikAraclar.html" >Kiralık Araçlar</a>
+            </div>
+            </li> 
+        <li class="nav-item"> <a class="nav-link" href="Hakkimizda.html">Hakkımızda</a></li>
+        <li class="nav-item"> <a class="nav-link" href="iletisim.html">İletişim</a></li>
+
+        </ul>
+        </div>
+            
+</nav>  
+ 
+                <div id="deneme2" class="carousel slide" data ride="carousel">
+    
+        <ul class="carousel-indicators">
+            
+            <li data-target="#deneme2" data-slide-to="0" class="active"></li>
+            <li data-target="#deneme2" data-slide-to="1"></li>
+
+            
+            
+       </ul>
+        
+        <div class="carousel-inner">
+        
+            <div class="carousel-item active">
+                
+                <img src="images/kapakfoto1.jpg" width="100%" height="92%">
+                <div class="carousel-caption">
+                    <h2 class="kpk">Sitemize Hoşgeldiniz</h2>
+                </div>
+             </div>
+            
+            <div class="carousel-item">
+                
+                <img src="images/kapakfoto.jpg" width="100%" height="92%">
+                <div class="carousel-caption">
+                     <h2 class="kpk">Sitemize Hoşgeldiniz</h2>
+                </div>
+             </div>
+            
+        </div>
+        
+        <a class="carousel-control-prev" href="#deneme2" data-slide="prev">
+           <span class="carousel-control-prev-icon"></span>
+        </a>
+        
+        <a class="carousel-control-next" href="#deneme2" data-slide="next">
+           <span class="carousel-control-next-icon"></span>
+        </a>
+        
+    </div>
+     
+         
+         <br><br><br>
+      <div class="container">
+          
+          <h2 id="yeni" style="text-align: center">Yeni Araçlarımız</h2><br>
+          
+          <div id="deneme" class="carousel slide" data ride="carousel">
+    
+        <ul class="carousel-indicators">
+            
+            <li data-target="#deneme" data-slide-to="0" class="active"></li>
+            <li data-target="#deneme" data-slide-to="1"></li>
+            <li data-target="#deneme" data-slide-to="2"></li>
+            <li data-target="#deneme" data-slide-to="3"></li>
+            
+            
+       </ul>
+        
+        <div class="carousel-inner">
+        
+            <div class="carousel-item active">
+                
+                <img class="rounded" src="images/ferrarion.jpg" width="100%" height="70%">
+                <div class="carousel-caption">
+                    <h3>Ferrari F8</h3>
+                </div>
+             </div>
+            
+            <div class="carousel-item">
+                
+                <img class="rounded" src="images/ferrariarka.jpg" width="100%" height="70%">
+                <div class="carousel-caption">
+                    <h3>Ferrari F8</h3>
+                </div>
+             </div>
+            
+            <div class="carousel-item">
+                
+                <img class="rounded" src="images/bentleyon.jpg" width="100%" height="70%">
+                <div class="carousel-caption">  
+                    <h3 style="color: gray">Bentley Continental GT</h3>
+                </div>
+             </div>
+            
+             <div class="carousel-item">
+                
+                <img class="rounded" src="images/bentleyarka.jpg" width="100%" height="70%">
+                <div class="carousel-caption"> 
+                    <h3 style="color: gray">Bentley Continental GT</h3>
+                </div>
+             </div>
+        </div>
+        
+        <a class="carousel-control-prev" href="#deneme" data-slide="prev">
+           <span class="carousel-control-prev-icon"></span>
+        </a>
+        
+        <a class="carousel-control-next" href="#deneme" data-slide="next">
+           <span class="carousel-control-next-icon"></span>
+        </a>
+        
+    </div>
+</div>    
+ 
+      <div class="container-fluid">
+          
+   <div id="accordion">
+       
+       <div class="row">
+           
+          <div class="col-md-3" id="col1">
+           <div class="card" >
+               <a href="images/ferrarianafayfa.png" target="_blank">
+ <img class="rounded-circle" src="images/ferrarianafayfa.png" width="100%" ></a>
+ <div class="card-body">
+ <h4 class="card-title">Ferrari F8 2020</h4>
+ <p class="card-text">5.800.000₺</p>
+ <button type="button" class="btn btn-danger " data-toggle="modal" data-target="#birmodal">İncele</button>
+     <div class="modal fade" id="birmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Ferrari F8 Tributo</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/ferrarion.jpg" width="100%"  class="border"> 
+                                        <img src="images/ferrari.jpg" width="100%"  class="border mt-3"> 
+                                        <img src="images/ferrari1.jpg" width="100%"  class="border mt-3 mb-3"> 
+                                        <h4>Araç Hakkında</h4>
+                                      Aracımız 2020 Model Olup 0 km'dedir. Çalışmayan aksanı yoktur. Otomatik vitestir.
+                                        Motor gücü 601 HP ve üzerindedir. Motor Hacmi 3501 - 4000 cm3'dür. Arkadan itiştir.
+                                        Kredide 24 Ay'a kadar taksit mevcuttur.
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+ </div>
+</div></div>
+       
+       
+           <div class="col-md-6 mt-5">
+            <div class="card">
+           <div class="header">
+          <a href="#collapse1" class="card-link collapsed" data-toggle="collapse">
+            <p class="bolum1">Mercedes-Benz</p></a>
+          </div>
+          <div id="collapse1" class="collapse show" data-parent="#accordion">
+          <div class="card-body">
+              
+              <div class="row">
+                  
+              <div class="col-lg-4 col-md-12" ><div class="card  mt-3">
+                  <img src="images/mercedes1.jpeg" width="100%"  height="100%">
+                  <div class="card-body">
+                        <h4 class="card-title">Mercedes-Benz A200 </h4>
+                       <p class="card-text">400.000₺</p>
+                       <button type="button" class="btn btn-info " data-toggle="modal" data-target="#firstmodal">İncele</button>
+                          <div class="modal fade" id="firstmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Yeni A-Serisi Mercedes</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/mercedes11.jpeg" width="100%" height="220px" class="border mb-3"> 
+                                         Aracımız 2019 Model 12.000km'dedir. Çalışmayan aksanı yoktur. Sıfır Ayarındadır. Otomatik vitestir.
+                                        Motor gücü 163 HP'dir. Motor Hacmi 1332cc'dir. Önden çekiştir.
+                                        Kredide 24 Ay'a kadar taksit mevcuttur.
+
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+              <div class="col-lg-4 col-md-6"><div class="card mt-3">
+                  <img src="images/mercedes2.jpg" width="100%"  height="100%">
+                  <div class="card-body">
+                        <h4 class="card-title">Mercedes-Benz SLC 180</h4>
+                       <p class="card-text">280.000₺</p>
+                       <button type="button" class="btn btn-info " data-toggle="modal" data-target="#secondmodal">İncele</button>
+                          <div class="modal fade" id="secondmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Mercedes-Benz SLC 180</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/mercedes22.jpg" width="100%" height="220px" class="border mb-3"> 
+                                       Aracımız 2017 Model 42.000km'dedir. Çalışmayan aksanı yoktur. Otomatik vitestir.
+                                        Motor gücü 156 HP'dir. Motor Hacmi 1595cc'dir. Arkadan itişlidir. Sağ arka tamponda avuc içi kadar bir boya mevcuttur. Haricinde hatasızdır.
+                                        Kredide 24 Ay'a kadar taksit mevcuttur. 
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+              <div class="col-lg-4 col-md-6"><div class="card mt-3">
+                  <img src="images/mercedes3.jpeg" width="100%" height="100%">
+                  <div class="card-body">
+                        <h4 class="card-title">Mercedes-Benz C200</h4>
+                       <p class="card-text">245.000₺</p>
+                      <button type="button" class="btn btn-info " data-toggle="modal" data-target="#thirdmodal">İncele</button>
+                          <div class="modal fade" id="thirdmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Mercedes-Benz C200 AMG</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/mercedes33.jpeg" width="100%" height="220px" class="border mb-3">
+                                      Aracımız 2016 Model 82.450km'dedir. Çalışmayan aksanı yoktur. Otomatik vitestir.
+                                        Motor gücü 136 HP'dir. Motor Hacmi 1598cc'dir. Arkadan itişlidir. Ön tampon değişimiştir ve sağ kapıda lokal boya vardır. Haricinde hatasızdır.
+                                        Kredide 24 Ay'a kadar taksit mevcuttur.   
+                                        </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+
+              
+              </div>
+              
+              
+              
+              </div></div>
+                
+        </div>
+            <div class="card">
+           <div class="header">
+          <a href="#collapse2" class="card-link collapsed" data-toggle="collapse">
+            <p class="bolum1">Volkswagen</p></a>
+          </div>
+          <div id="collapse2" class="collapse " data-parent="#accordion">
+          <div class="card-body">
+              
+              <div class="row">
+                  
+              <div class="col-lg-4 col-md-12 mb-3" ><div class="card mt-3">
+                  <img src="images/passat.png" width="100%"  height="170px">
+                  <div class="card-body">
+                        <h4 class="card-title">Volkswagen Passat</h4>
+                       <p class="card-text">200.000₺</p>
+                       <button type="button" class="btn btn-info " data-toggle="modal" data-target="#firsmodal">İncele</button>
+                          <div class="modal fade" id="firsmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Volkswagen Passat 2.0 Highline</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/passat1.JPG" width="100%" height="220px" class="border mb-3"> 
+                                         Aracımız 2016 Model 48.120km'dedir. Çalışmayan aksanı yoktur. Sıfır Ayarındadır. Otomatik vitestir.
+                                        Motor gücü 123 HP'dir. Motor Hacmi 1332cc'dir. Önden çekiştir.
+                                        Kredide 24 Ay'a kadar taksit mevcuttur.
+
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+              <div class="col-lg-4 col-md-6"><div class="card mt-3">
+                  <img src="images/tiguan.png" width="100%"  height="170px">
+                  <div class="card-body">
+                        <h4 class="card-title">Volkwagen Tiguan  </h4>
+                       <p class="card-text">235.000₺</p>
+                       <button type="button" class="btn btn-info " data-toggle="modal" data-target="#seconmodal">İncele</button>
+                          <div class="modal fade" id="seconmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">>Volkwagen Tiguan 2.0 Highline</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/tiguan1.jpg" width="100%" height="220px" class="border mb-3"> 
+                                       Aracımız 2018 Model 32.500km'dedir. Çalışmayan aksanı yoktur. Otomatik vitestir.
+                                        Motor gücü 156 HP'dir. Motor Hacmi 1595cc'dir. Arkadan itişlidir. Sağ arka tamponda avuc içi kadar bir boya mevcuttur. Haricinde hatasızdır.
+                                        Kredide 24 Ay'a kadar taksit mevcuttur. 
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+              <div class="col-lg-4 col-md-6 "><div class="card mt-3">
+                  <img src="images/golf.png" width="100%" height="170px">
+                  <div class="card-body">
+                        <h4 class="card-title">Volkswagen Golf</h4>
+                       <p class="card-text">149.000₺</p>
+                      <button type="button" class="btn btn-info " data-toggle="modal" data-target="#thirmodal">İncele</button>
+                          <div class="modal fade" id="thirmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Volkswagen Golf 1.4 TSI</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/golf1.jpg" width="100%" height="220px" class="border mb-3">
+                                      Aracımız 2017 Model 62.450km'dedir. Çalışmayan aksanı yoktur. Otomatik vitestir.
+                                        Motor gücü 136 HP'dir. Motor Hacmi 1598cc'dir. Arkadan itişlidir. Ön tampon değişimiştir ve sağ kapıda lokal boya vardır. Haricinde hatasızdır.
+                                        Kredide 24 Ay'a kadar taksit mevcuttur.   
+                                        </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+
+              
+              </div>
+              
+              
+              
+              </div>
+                
+        </div>
+      </div>
+            <div class="card">
+           <div class="header">
+          <a href="#collapse3" class="card-link collapsed" data-toggle="collapse">
+            <p class="bolum1">Audi</p></a>
+          </div>
+          <div id="collapse3" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+              
+              <div class="row">
+                  
+              <div class="col-lg-4 col-md-12 mb-3" ><div class="card mt-3">
+                  <img src="images/audi.jpg" width="100%"  height="170px">
+                  <div class="card-body">
+                        <h4 class="card-title">Audi A5 </h4>
+                       <p class="card-text">600.000₺</p>
+                       <button type="button" class="btn btn-info " data-toggle="modal" data-target="#firmodal">İncele</button>
+                          <div class="modal fade" id="firmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Audi A5 2.0 TDI Sportback S-Line</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/audi1.jpg" width="100%" height="220px" class="border "> 
+                                        <img src="images/audi2.jpg" width="100%" height="220px" class="border mt-2 mb-3"> 
+                                         
+                                         Aracımız 2020 Model 0 km'dedir. Araç Sportback olup S-Line pakettir.Çalışmayan aksanı yoktur. Otomatik vitestir. Görüp görebileceğiniz en full pakettir.
+                                        Motor gücü 190 HP'dir. Motor Hacmi 1968cc'dir. 4 Çekiştir.
+                                        Kredide 12 Ay'a kadar taksit mevcuttur.
+
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+              <div class="col-lg-4 col-md-6 "><div class="card mt-3">
+                  <img src="images/audiQ8.jpg" width="100%"  height="170px">
+                  <div class="card-body">
+                        <h4 class="card-title">Audi Q8</h4>
+                       <p class="card-text">2.562.000₺</p>
+                       <button type="button" class="btn btn-info " data-toggle="modal" data-target="#secomodal">İncele</button>
+                          <div class="modal fade" id="secomodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Audi Q8 4.0 FSI S-Line</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/audiQ8_1.jpg" width="100%" height="220px" class="border"> 
+                                        <img src="images/audiQ8_2.jpg" width="100%" height="220px" class=" border mt-2 mb-3"> 
+                                        Aracımız 2018 Model 0 km'dedir. Araç Sportback olup S-Line pakettir. Otomatik vitestir. Görüp görebileceğiniz en full pakettir.
+                                        Motor gücü 435 HP'dir. Motor Hacmi 3956cc'dir. 4 Çekiştir.
+                                        Kredide 9 Ay'a kadar taksit mevcuttur. 
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+              <div class="col-lg-4 col-md-6"><div class="card mt-3">
+                  <img src="images/audiA7.png" width="100%" height="170px">
+                  <div class="card-body">
+                        <h4 class="card-title">Audi A7</h4>
+                       <p class="card-text">1.250.000₺</p>
+                      <button type="button" class="btn btn-info " data-toggle="modal" data-target="#thimodal">İncele</button>
+                          <div class="modal fade" id="thimodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Audi A7 QUATTRO 2.TDI S-Line</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/audiA7_1.png" width="100%" height="220px" class="border">
+                                        <img src="images/audiA7_2.png" width="100%" height="220px" class=" border mt-2 mb-3">
+                                      Aracımız 2020 Model 3.800 km'dedir. Araç Sportback olup S-Line pakettir. Otomatik vitestir. Görüp görebileceğiniz en full pakettir.
+                                        Motor gücü 204 HP'dir. Motor Hacmi 1968cc'dir. 4 Çekiştir.
+                                        Kredide 9 Ay'a kadar taksit mevcuttur.  
+                                        </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+
+              
+              </div>
+              
+              
+              
+              </div>
+                
+        </div>
+      </div>
+            <div class="card mb-3">
+           <div class="header">
+          <a href="#collapse4" class="card-link collapsed" data-toggle="collapse">
+            <p class="bolum1">Renault</p></a>
+          </div>
+          <div id="collapse4" class="collapse" data-parent="#accordion">
+          <div class="card-body">
+              
+              <div class="row">
+                  
+              <div class="col-lg-4 col-md-12" ><div class="card mt-3">
+                  <img src="images/megan.png" width="100%"  height="170px">
+                  <div class="card-body">
+                        <h4 class="card-title">Renault Megane</h4>
+                       <p class="card-text">235.000₺</p>
+                       <button type="button" class="btn btn-info " data-toggle="modal" data-target="#bimodal">İncele</button>
+                          <div class="modal fade" id="bimodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Renault Megane 1.5 dCi Icon</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/megan1.png" width="100%" height="220px" class="border"> 
+                                        <img src="images/megan3.png" width="100%" height="220px" class="mt-2 border mb-3"> 
+                                         Aracımız 2017 Model 18.000km'dedir. Çalışmayan aksanı yoktur. Sağ ön kapıda avuç içi kadar boya vardır. Haricinde hatasızdır. Otomatik vitestir.
+                                        Motor gücü 110 HP'dir. Motor Hacmi 1461cc'dir. Önden çekiştir.
+
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+              <div class="col-lg-4 col-md-6 "><div class="card mt-3">
+                  <img src="images/flugms1.png" width="100%"  height="170px">
+                  <div class="card-body">
+                        <h4 class="card-title">Renault Fluence</h4>
+                       <p class="card-text">135.000₺</p>
+                       <button type="button" class="btn btn-info " data-toggle="modal" data-target="#ikmodal">İncele</button>
+                          <div class="modal fade" id="ikmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Renault Fluence 1.5dCi Icon Prestige</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/flugms.png" width="100%" height="220px" class="border mb-3"> 
+                                       Aracımız 2016 Model 43.000km'dedir. Çalışmayan aksanı yoktur. Otomatik vitestir. Otomatik El Freni ve Xenon Far mevcut olup sınıfının en full aracıdır. 
+                                        Motor gücü 110 HP'dir. Motor Hacmi 1461cc'dir. Önden çekiştir. Sıfır ayarındadır. Alıcısına hayırlı olsun.
+                                       
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+              <div class="col-lg-4 col-md-6"><div class="card mt-3">
+                  <img src="images/fluence.png" width="100%" height="170px">
+                  <div class="card-body">
+                        <h4 class="card-title">Renault Fluence</h4>
+                       <p class="card-text">115.000₺</p>
+                      <button type="button" class="btn btn-info " data-toggle="modal" data-target="#ucmodal">İncele</button>
+                          <div class="modal fade" id="ucmodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Renault Fluence 1.5 dCi Icon</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/fluence1.png" width="100%" height="220px" class="border mb-3">
+                                      Aracımız 2016 Model 58.400km'dedir. Çalışmayan aksanı yoktur. Otomatik vitestir. Aracın rengi özeldir, ismi kestane kahverengisi olarak geçmektedir. Güneşte kahverengi, gölgede koyu mavi görünüm almaktadır.
+                                        Motor gücü 110 HP'dir. Motor Hacmi 1461cc'dir. Önden çekerdir. Sıfır ayarındadır. Alıcısına hayırlı olsun.
+                                        Kredide 24 Ay'a kadar taksit mevcuttur.   
+                                        </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                </div>
+              </div></div>
+
+              
+              </div>
+              
+              
+              
+              </div>
+                
+        </div>
+      </div>
+      </div>
+           
+           
+           
+           
+           
+                 <div class="col-md-3" id="col2">
+           <div class="card" >
+               <a href="images/bentley.png" target="_blank">
+ <img class="rounded-circle" src="images/bentley.png"  width="100%" ></a>
+ <div class="card-body">
+ <h4 class="card-title">Bentley GT 2020</h4>
+ <p class="card-text ">4.300.000₺</p>
+  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#ikimodal">İncele</button>
+     <div class="modal fade" id="ikimodal">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Bentley Continental GT 2020</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="images/bentley1.jpg" width="100%" class="border"> 
+                                        <img src="images/satilik9.jpg" width="100%" class="border mt-3"> 
+                                        <img src="images/satilik9_1.jpg" width="100%" class="border mt-3 mb-3"> 
+                                        <h4>Araç Hakkında</h4>
+                                      Aracımız 2020 Model Olup 0 km'dedir. Çalışmayan aksanı yoktur. Otomatik vitestir.
+                                        Motor gücü 507 HP'dir. Motor Hacmi 3993cc'dir. 4 Çekiştir.
+                                        Kredide 24 Ay'a kadar taksit mevcuttur.
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+ </div>
+</div>
+           </div>
+       </div>
+
+      
+      
+    </div>
+ </div>     
+      
+   <footer class="bg-light py-5 mt-5" style="text-align: center" >
+      <div class="container">
+         <div class="row">
+       <div class="col-md-3"></div>
+       <div class="col-md-6" id="footer">
+            <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-f fa-2x mx-4"></i></a>
+            <a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter fa-2x mx-4" ></i></a>
+            <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram fa-2x mx-4" style="color: deeppink"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube fa-2x mx-4" style="color:crimson"></i></a>
+             </div>
+    <div class="col-md-12 mt-3" id="footers">
+             Copyright (c) 2020 Web Sitesi     
+             </div>
+             
+       </div>
+       </div>
+      
+      </footer>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  </body>
+      
+</html>

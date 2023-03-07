@@ -1,0 +1,449 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+     <title>Dinçer Oto Galeri</title>
+      
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+      
+      <style>
+          body{
+              font-family:cursive;
+               background-color:rgba(47, 53, 66,1.0);
+          }
+      
+         
+          
+          #collapsenav{
+              font-family:monospace;
+              font-size: 20px;
+          }
+          nav{
+              background-color: rgba(72, 84, 96,1.0);
+          }
+          #collapsenav a:hover{
+              border-radius: 5px;
+              background-color:rgba(200, 214, 229,1.0);
+              color:rgba(1, 163, 164,1.0);
+              font-weight: bold;
+          }
+           #dropdownmenu a:hover{
+              background-color:floralwhite;
+              border-radius: 10px;
+          }
+          
+            .kpk{
+            margin: 17%;
+            color:darkgray;
+            opacity: 0.3;
+            font-weight: bold;
+              
+          }
+          .kpk:hover{
+              opacity: 0.8;
+              color:white;
+              
+          }
+          
+           .card{
+              background-color:rgba(223, 228, 234,1.0);
+          }
+         
+         #active{
+              background-color:rgba(255, 82, 82,1.0);
+          }
+          
+          
+          .dropdown-item:hover{
+             background-color:lightcyan;
+          }
+          
+          #dropright:hover{
+              background-color:rgba(72, 219, 251,1.0);
+          }
+         
+          
+          @media screen and (min-width: 768px){
+              .card img{
+                  height: 300px;
+              }
+          }
+         
+          @media screen and (min-width:100px) {
+
+    .card-title,
+    .card-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+          
+      </style>
+    </head>
+    
+    
+  <body class="bg-dark">
+     
+    
+
+      
+  
+    <nav class="navbar navbar-expand-md navbar-dark ">
+      <a class="navbar-brand">
+       <i class="fas fa-car fa-2x"></i> &nbsp; DİNÇER OTO GALERİ </a>
+     
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsenav">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+    <div class="collapse navbar-collapse justify-content-center" id="collapsenav">
+           
+        <ul class="navbar-nav">
+            
+        <li class="nav-item "> <a class="nav-link" href="OtoGaleri.html">Anasayfa</a></li>
+                <li class="nav-item dropdown navbar-dark active"> <a class="nav-link dropdown-toggle" href="#" id="dropmenu" data-toggle="dropdown" >Araçlar</a>
+            <div class="dropdown-menu" style="background-color:rgba(199, 236, 238,1.0)"  id="dropdownmenu">
+            <a class="dropdown-item" href="SatilikAraclar.html" style="color:cadetblue">Satılık Araçlar</a>
+            <a class="dropdown-item" href="KiralikAraclar.html" style="color:cadetblue">Kiralık Araçlar</a>
+            </div>
+            </li> 
+        <li class="nav-item"> <a class="nav-link" href="Hakkimizda.html">Hakkımızda</a></li>
+        <li class="nav-item"> <a class="nav-link" href="iletisim.html">İletişim</a></li>
+
+        </ul>
+        </div>
+            
+</nav>  
+ 
+                      <div class="container mt-3">
+       <div id="deneme3" class="carousel slide" data ride="carousel">
+    
+        <ul class="carousel-indicators">
+            <li data-target="#deneme3" data-slide-to="0" class="active"></li>  
+       </ul>
+           <div class="carousel-inner">
+        
+            <div class="carousel-item active">
+                
+                <img class="rounded" src="images/kiralik.jpg" width="100%" height="60%">
+                <div class="carousel-caption">
+                    <h2 class="kpk">KİRALIK ARAÇLAR</h2>
+                </div>
+             </div>
+
+         </div></div>
+      </div>
+      
+      <div class="container-fluid mt-4">
+      <div class="btn-group dropright " >
+  <button type="button" class="btn" style="background-color:rgba(72, 219, 251,1.0)">
+    Günlük Fiyat Aralığını Seçiniz :
+  </button>
+  <button type="button" id="dropright" class="btn btn-light dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  
+  </button>
+  <div class="dropdown-menu" style="background-color:rgba(199, 236, 238,1.0)">
+        <a class="dropdown-item"  href="KiralikAraclar.html" >Tümü</a>
+        <a class="dropdown-item "  href="KiralikAraclar_2.html" >100₺-300₺</a>
+            <a class="dropdown-item active" id="active"  href="KiralikAraclar_3.html">300₺-600₺</a>
+            <a class="dropdown-item" href="KiralikAraclar_4.html">600₺-2000₺</a>
+            
+  </div>
+</div>
+      </div>
+      
+      <div class="container-fluid">  
+          <div class="row">
+         <div class="col-md-6 col-lg-4"><div class="card mt-5">
+                  <img src="images/kiralik16.png" width="100%" height="100%" >
+                  <div class="card-body">
+                        <h4 class="card-title">Volkswagen Polo</h4>
+                      <p class="card-text">Günlük:350₺</p>
+                       <p class="card-text">Haftalık:2.300₺</p>
+                       <p class="card-text">Aylık:8.000₺</p>
+<button type="button" class="btn btn-sm btn-info " data-toggle="modal" data-target="#kiralik15">İncele</button>
+                          <div class="modal fade" id="kiralik15">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Volkswagen Polo 1.6 TDI Comfortline</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark text-light" style="text-align: center">
+                                     <h3>Araç Bilgileri</h3>
+                                    <p><i class="fas fa-gas-pump">&ensp;</i>Dizel</p>
+                                    <p><i class="fas fa-cog">&ensp;</i>Yarı Otomatik</p>
+                                    <p><i class="fas fa-users">&ensp;</i>4+1 Kişi</p>
+                                    <p style="text-align: center">Min. Sürücü Yaşı:25 &ensp; Min.Ehliyet Süresi:4 Yıl</p>
+                                         <br>
+                                     <h3 style="text-align: center">Genel Bilgiler</h3>
+                                     <p><i class="fas fa-arrow-right">&ensp;</i>Tüm araçlarımızın kasko işlemleri bize aittir.</p>
+                                <p><i class="fas fa-arrow-right">&ensp;</i>Geniş araç flomuzla günlük-haftalık-aylık araç kiralama hizmeti vermekteyiz.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Şirketlere ve kişiye özel fiyatlar verilmektedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Fiyatlarımız günlük-haftalık-aylık şeklindedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Araçlarımızın tüm bakımları bize aittir.</p>
+                                        <p><i class="fas fa-exclamation">&ensp;</i>Detaylı bilgi için bize ulaşmayı unutmayınız...</p>
+                                        
+
+                                    </div>
+                                    <div class="modal-footer bg-dark" >
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                      
+                </div>
+              </div></div>
+          
+          
+             <div class="col-md-6 col-lg-4"><div class="card mt-5">
+                  <img src="images/kiralik29.jpg" width="100%" height="100%">
+                  <div class="card-body">
+                        <h4 class="card-title">Seat Leon</h4>
+                      <p class="card-text">Günlük:380₺</p>
+                       <p class="card-text">Haftalık:2.660₺</p>
+                       <p class="card-text">Aylık:7.500₺</p>
+                <button type="button" class="btn btn-sm btn-info " data-toggle="modal" data-target="#firstmodal8">İncele</button>
+                          <div class="modal fade" id="firstmodal8">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title"> Seat Leon 1.5 EcoTSI FR</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark text-light" style="text-align: center">
+                                     <h3>Araç Bilgileri</h3>
+                                    <p><i class="fas fa-gas-pump">&ensp;</i>Benzin</p>
+                                    <p><i class="fas fa-cog">&ensp;</i>Yarı Otomatik</p>
+                                    <p><i class="fas fa-users">&ensp;</i>4+1 Kişi</p>
+                                    <p style="text-align: center">Min. Sürücü Yaşı:25 &ensp; Min.Ehliyet Süresi:4 Yıl</p>
+                                         <br>
+                                     <h3 style="text-align: center">Genel Bilgiler</h3>
+                                     <p><i class="fas fa-arrow-right">&ensp;</i>Tüm araçlarımızın kasko işlemleri bize aittir.</p>
+                                <p><i class="fas fa-arrow-right">&ensp;</i>Geniş araç flomuzla günlük-haftalık-aylık araç kiralama hizmeti vermekteyiz.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Şirketlere ve kişiye özel fiyatlar verilmektedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Fiyatlarımız günlük-haftalık-aylık şeklindedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Araçlarımızın tüm bakımları bize aittir.</p>
+                                        <p><i class="fas fa-exclamation">&ensp;</i>Detaylı bilgi için bize ulaşmayı unutmayınız...</p>
+                                        
+
+                                    </div>
+                                    <div class="modal-footer bg-dark" >
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                         </div>
+                      
+                   </div> 
+                </div></div>
+          
+            <div class="col-md-6 col-lg-4"><div class="card mt-5">
+                  <img src="images/kiralik17.png" width="100%" height="100%">
+                  <div class="card-body">
+                        <h4 class="card-title">Volkswagen Golf</h4>
+                      <p class="card-text">Günlük:450₺</p>
+                       <p class="card-text">Haftalık:2.600₺</p>
+                       <p class="card-text">Aylık:8.850₺</p>
+                <button type="button" class="btn btn-sm btn-info " data-toggle="modal" data-target="#kiralik16">İncele</button>
+                          <div class="modal fade" id="kiralik16">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Volkswagen Golf 1.6 TDI</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark text-light" style="text-align: center">
+                                     <h3>Araç Bilgileri</h3>
+                                    <p><i class="fas fa-gas-pump">&ensp;</i>Dizel</p>
+                                    <p><i class="fas fa-cog">&ensp;</i>Manuel</p>
+                                    <p><i class="fas fa-users">&ensp;</i>4+1 Kişi</p>
+                                    <p style="text-align: center">Min. Sürücü Yaşı:25 &ensp; Min.Ehliyet Süresi:4 Yıl</p>
+                                         <br>
+                                     <h3 style="text-align: center">Genel Bilgiler</h3>
+                                     <p><i class="fas fa-arrow-right">&ensp;</i>Tüm araçlarımızın kasko işlemleri bize aittir.</p>
+                                <p><i class="fas fa-arrow-right">&ensp;</i>Geniş araç flomuzla günlük-haftalık-aylık araç kiralama hizmeti vermekteyiz.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Şirketlere ve kişiye özel fiyatlar verilmektedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Fiyatlarımız günlük-haftalık-aylık şeklindedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Araçlarımızın tüm bakımları bize aittir.</p>
+                                        <p><i class="fas fa-exclamation">&ensp;</i>Detaylı bilgi için bize ulaşmayı unutmayınız...</p>
+                                        
+
+                                    </div>
+                                    <div class="modal-footer bg-dark" >
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                      
+                </div>                
+              </div></div>
+              
+          
+             <div class="col-md-6 col-lg-6">
+                 <div class="card mt-5">
+                  <img src="images/kiralik28.jpg" width="100%" height="100%">
+                  <div class="card-body">
+                        <h4 class="card-title">Seat Ateca</h4>
+                      <p class="card-text">Günlük:450₺</p>
+                       <p class="card-text">Haftalık:2.800₺</p>
+                       <p class="card-text">Aylık:8.500₺</p>
+                <button type="button" class="btn btn-sm btn-info " data-toggle="modal" data-target="#firstmodal7">İncele</button>
+                          <div class="modal fade" id="firstmodal7">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Seat Ateca 1.6 TDI Ecomotive Xcellence </h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark text-light" style="text-align: center">
+                                     <h3>Araç Bilgileri</h3>
+                                    <p><i class="fas fa-gas-pump">&ensp;</i>Dizel</p>
+                                    <p><i class="fas fa-cog">&ensp;</i>Yarı Otomatik</p>
+                                    <p><i class="fas fa-users">&ensp;</i>4+1 Kişi</p>
+                                    <p style="text-align: center">Min. Sürücü Yaşı:25 &ensp; Min.Ehliyet Süresi:4 Yıl</p>
+                                         <br>
+                                     <h3 style="text-align: center">Genel Bilgiler</h3>
+                                     <p><i class="fas fa-arrow-right">&ensp;</i>Tüm araçlarımızın kasko işlemleri bize aittir.</p>
+                                <p><i class="fas fa-arrow-right">&ensp;</i>Geniş araç flomuzla günlük-haftalık-aylık araç kiralama hizmeti vermekteyiz.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Şirketlere ve kişiye özel fiyatlar verilmektedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Fiyatlarımız günlük-haftalık-aylık şeklindedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Araçlarımızın tüm bakımları bize aittir.</p>
+                                        <p><i class="fas fa-exclamation">&ensp;</i>Detaylı bilgi için bize ulaşmayı unutmayınız...</p>
+                                        
+
+                                    </div>
+                                    <div class="modal-footer bg-dark" >
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                      
+                </div>                
+              </div></div>
+          
+           <div class="col-md-12 col-lg-6"><div class="card mt-5">
+                  <img src="images/kiralik15.jpg" width="100%" height="100%">
+                  <div class="card-body">
+                        <h4 class="card-title">Volkswagen Passat</h4>
+                       <p class="card-text">Günlük:500₺</p>
+                       <p class="card-text">Haftalık:3.500₺</p>
+                       <p class="card-text">Aylık:9.000₺</p>
+                 <button type="button" class="btn btn-sm btn-info " data-toggle="modal" data-target="#kiralik14">İncele</button>
+                          <div class="modal fade" id="kiralik14">
+                                <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                <div class="modal-content">
+                                    <div class="modal-header bg-warning">
+                                    <h4 class="modal-title">Volkswagen Passat 2.0 TDI R-Line</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                                    <div class="modal-body bg-dark text-light" style="text-align: center">
+                                     <h3>Araç Bilgileri</h3>
+                                    <p><i class="fas fa-gas-pump">&ensp;</i>Dizel</p>
+                                    <p><i class="fas fa-cog">&ensp;</i>Yarı Otomatik</p>
+                                    <p><i class="fas fa-users">&ensp;</i>4+1 Kişi</p>
+                                    <p style="text-align: center">Min. Sürücü Yaşı:25 &ensp; Min.Ehliyet Süresi:4 Yıl</p>
+                                         <br>
+                                     <h3 style="text-align: center">Genel Bilgiler</h3>
+                                     <p><i class="fas fa-arrow-right">&ensp;</i>Tüm araçlarımızın kasko işlemleri bize aittir.</p>
+                                <p><i class="fas fa-arrow-right">&ensp;</i>Geniş araç flomuzla günlük-haftalık-aylık araç kiralama hizmeti vermekteyiz.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Şirketlere ve kişiye özel fiyatlar verilmektedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Fiyatlarımız günlük-haftalık-aylık şeklindedir.</p>
+                                        <p><i class="fas fa-arrow-right">&ensp;</i>Araçlarımızın tüm bakımları bize aittir.</p>
+                                        <p><i class="fas fa-exclamation">&ensp;</i>Detaylı bilgi için bize ulaşmayı unutmayınız...</p>
+                                        
+
+                                    </div>
+                                    <div class="modal-footer bg-dark" >
+                                    <button type="button" class="btn btn-danger " data-dismiss="modal">Kapat</button>
+                                    </div>
+                                    </div>
+                                </div>
+                      </div>
+                      
+                </div>
+              </div></div>
+          </div>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+      
+      
+   </div> 
+ 
+     
+    
+      
+      
+      
+      
+      
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+   <footer class="bg-light py-5 mt-5" style="text-align: center" >
+      <div class="container">
+         <div class="row">
+       <div class="col-md-3"></div>
+       <div class="col-md-6" id="footer">
+            <a href="https://www.facebook.com/" target="_blank"> <i class="fab fa-facebook-f fa-2x mx-4"></i></a>
+            <a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter fa-2x mx-4" ></i></a>
+            <a href="https://www.instagram.com/" target="_blank"> <i class="fab fa-instagram fa-2x mx-4" style="color: deeppink"></i></a>
+            <a href="https://www.youtube.com/" target="_blank"> <i class="fab fa-youtube fa-2x mx-4" style="color:crimson"></i></a>
+             </div>
+    <div class="col-md-12 mt-3" id="footers">
+             Copyright (c) 2020 Web Sitesi     
+             </div>
+             
+       </div>
+       </div>
+      
+      </footer>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    
+  </body>
+      
+</html>
